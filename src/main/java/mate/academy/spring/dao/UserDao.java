@@ -5,9 +5,13 @@ import java.util.Optional;
 import mate.academy.spring.model.User;
 
 public interface UserDao {
-    void add(User user);
+    User add(User user);
 
     List<User> getAll();
 
     Optional<User> get(Long id);
+
+    void delete(Long id);
+
+    User update(User user);
 }
